@@ -79,11 +79,33 @@ ul {
   
 /* Styling af main page */
 
+.intro-tekst-desktop{
+  display: none;
+}
 .pool-turnering{
-    display: grid;
-    justify-content: center;
     text-transform: uppercase;
     text-align: center;
+  
+}
+/* .background-checkered-top{
+  background-image: url(/media/checkered-texture.svg);
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: 300%;
+}
+.background-checkered-bottom{
+  background-image: url(/media/checkered-texture.svg);
+   background-position: bottom;
+   background-repeat: no-repeat;
+   background-size: 300%;
+} */
+.checkered{
+  height: 50px;
+  object-fit: contain;
+
+}
+.ball-event{
+  height: 100px;
 }
 .events{
     display: flex;
@@ -95,40 +117,51 @@ background-color: purple;
 width: 12.5rem;
 text-align: center;
 }
+
 /* stying af Aktiviteter */
 .aktitiviter {
-    height: 300px;
-    background-color: var(--red);
     width: 100%;
     display: grid;
     justify-content: center;
+    text-align: center;
 
 }
 .aktitiviter .aktivitet-list{
     display: flex;
     justify-content: space-between;
+    
 }
 .aktivitet-list div{
     display: flex;
     justify-content: center;
 }
+.aktivitet-list img{
+ height: 30px;
+ 
+}
+.aktiviteter-desktop{
+  display: none;
+}
 /* Styling af Booking system til aktiviteter */
 .book-aktivitet {
-    height: 300px;
     background-color: var(--green);
     width: 100%;
+    display: grid;
+  justify-items: center;
 }
+
 /* styling a Diner sektionen */
 .diner {
-    height: 300px;
     background-color: var(--red);
     width: 100%;
+  text-align: center;
 }
-  
+  .diner-tekst-desktop{
+    display: none;
+  }
   .month {
     padding: 70px 25px;
     width: 100%;
-    background: #1abc9c;
     text-align: center;
   }
   
@@ -138,7 +171,6 @@ text-align: center;
   }
   
   .month ul li {
-    color: white;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -291,6 +323,8 @@ opacity: 1;
 @media screen and (max-width: 480px) {
     header {
         display: block;
+       
+
       }
       .navigation {
         height:0;
@@ -322,6 +356,10 @@ opacity: 1;
       header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
         display:inline-block;
       }
+
+      /* aktiviteter tekst */
+     
+
     
 }
  
@@ -336,7 +374,13 @@ opacity: 1;
 /* Desktop query */
 @media screen and (min-width: 1025px) {
    
-       
+  .aktiviteter-mobile{
+    display: none;
+  }
+body{
+  margin-left: 300px;
+  margin-right: 300px;
+}
 
 }
 
