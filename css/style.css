@@ -1,0 +1,343 @@
+/* Vores root variables.  */
+
+:root {
+--beige: #F6EDDB;
+--black: #2E2E2E;
+--green: #32623F;
+--red: #89081E;
+--h1: 2rem;
+}
+
+/* Reset global */
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "zenon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+body{
+    background-color: var(--beige);
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navigations css */
+.hamburger-icon {
+    display: none;
+  }
+  .logo img {
+    height: 100px;
+  }
+  
+  header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--red);
+  }
+  .logo-text{
+    color:white;
+  }
+  
+  .hamburger-icon{
+    border:none;
+    background-color:transparent;
+  }
+  
+  .hamburger-icon .fa-bars,
+  .hamburger-icon .fa-x{
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+  }
+  
+  .hamburger-icon input[type="checkbox"] {
+    appearance: none;
+  }
+  
+  .navigation {
+    display: flex;
+    gap: 1rem;
+  }
+  .navigation a{
+    color:white
+  }
+  
+/* Styling af main page */
+
+.pool-turnering{
+    display: grid;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+.events{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.events div{
+background-color: purple;
+width: 12.5rem;
+text-align: center;
+}
+/* stying af Aktiviteter */
+.aktitiviter {
+    height: 300px;
+    background-color: var(--red);
+    width: 100%;
+    display: grid;
+    justify-content: center;
+
+}
+.aktitiviter .aktivitet-list{
+    display: flex;
+    justify-content: space-between;
+}
+.aktivitet-list div{
+    display: flex;
+    justify-content: center;
+}
+/* Styling af Booking system til aktiviteter */
+.book-aktivitet {
+    height: 300px;
+    background-color: var(--green);
+    width: 100%;
+}
+/* styling a Diner sektionen */
+.diner {
+    height: 300px;
+    background-color: var(--red);
+    width: 100%;
+}
+  
+  .month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+  }
+  
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  
+  }
+  
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+  }
+  
+  .month .next {
+    float: right;
+    padding-top: 10px;
+  }
+  
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+  
+  .days {
+    padding: 0 0;
+    background: #eee;
+    margin: 0;
+  
+  }
+  
+  .days li {
+    list-style-type: none;
+    display:inline-block;
+    width: 13.6%;
+    text-align: center;
+    font-size:12px;
+    color: #777;
+    border:1px solid;
+    padding: 15px 15px;
+  }
+  
+  .days li .active {
+  
+    background: #1abc9c;
+    color: white !important
+  }
+  .days li .active {
+      padding: 2px;
+  }
+  .weekdays li, .days li {
+      width: 13.1%;
+  }
+  
+  
+  
+
+/* Styling af Diner menu sektionen */
+.diner-menu {
+    height: 300px;
+    background-color: var(--green);
+    width: 100%;
+}
+/* Styling af Drinks kort sektionen */
+.drinks-kort {
+    height: 300px;
+    background-color: var(--red);
+    width: 100%;
+}
+/* Styling af Om os */
+.since-1993 {
+    height: 300px;
+    background-color: var(--green);
+    width: 100%;
+}
+/* Styling af Kontakt formularen */
+.kontakt {
+    height: 300px;
+    background-color: var(--red);
+    width: 100%;
+}
+
+
+/* Styling af footer */
+
+footer {
+    background-color: var(--green);
+    width: 100%;
+    bottom: 0;
+}
+.footer, .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d;
+}
+.social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+.social a:hover{
+opacity: 0.9;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer ul li{
+display: inline-block;
+padding: 0 0.938rem;
+}
+
+.footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li a:hover {
+opacity: 1;
+}
+.footer, .copyright{
+    margin-top: 0.938rem;
+    text-align: center;
+    font-size: 0.813rem;
+    color: #aaaaaa;
+}
+
+/* Mobile query */
+
+@media screen and (max-width: 480px) {
+    header {
+        display: block;
+      }
+      .navigation {
+        height:0;
+        overflow:hidden;
+        flex-direction: column;
+        align-items: center;
+        transition:all 0.5s ease-in-out;
+      }
+      .logo {
+        display: flex;
+        justify-content: space-between;
+      }
+      .logo img {
+        height: 20px
+      }
+      .hamburger-icon {
+        display: block;
+      }
+      .fa-x{
+        display:none;
+      }
+      header:has(.hamburger-icon input[type="checkbox"]:checked) .navigation {
+        margin-top: 1rem;
+        height:120px;
+      }
+      header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+        display:none;
+      }
+      header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
+        display:inline-block;
+      }
+    
+}
+ 
+
+/* Tablet query */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    
+   
+        
+}
+
+/* Desktop query */
+@media screen and (min-width: 1025px) {
+   
+       
+
+}
+
+  
