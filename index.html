@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,31 +11,66 @@
     <link rel="icon" href="media/favicon.svg">
 </head>
 <body>
-    <header>
+    <header class="mobile-nav">
         <div class="logo">
-          <img src="media/sharks-logo.svg" alt="">
-          <button class="hamburger-icon">
+            <img src="media/sharks-logo.svg" alt="">
+        </div>
+        <div class="hamb-icon-container">
+        <button class="hamburger-icon">
             <label for="dropdown">
               <i class="fa-solid fa-bars"></i>
               <i class="fa-solid fa-x"></i>
             </label>
             <input type="checkbox" id="dropdown" />
-          </button>
-        </div>
+        </button>
         <ul class="navigation">
-          <li><a href="#">AKTIVITETER</a></li>
-          <li><a href="#">DINER</a></li>
-          <li><a href="#">BAR</a></li>
-          <li><a href="#">OM OS</a></li>
-        </ul>
+            <li><a href="#">AKTIVITETER</a></li>
+            <li><a href="#">BOOK AKTIVITET</a></li>
+            <li><a href="#">DINER</a></li>
+            <li><a href="#">BOOK DINER</a></li>
+            <li><a href="#">BAR</a></li>
+            <li><a href="#">OM OS</a></li>
+          </ul>
+        </div>
       </header>
+      <div class="desktop-nav">
+        <div class="left-links dekstop-links">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">AKTIVITETER</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">BOOK AKTIVITET</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">DINER</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">BOOK DINER</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="media/sharks-logo.svg" alt="">
+        </div>
+        <div class="right-links">
+            <ul>
+                <li><a href="#">BAR</a></li>
+                <li><a href="#">OM OS</a></li>
+            </ul>
+        </div>
+      </div>
 
     
     <!-- MAIN CONTENT HTML -->
     <main class="front-page">
+        <div class="front-image">
+            <h1>Velkommen til Sharks Århus</h1>
+        </div>
         <div>
-        <h1>Velkommen til Sharks Århus</h1>
-        <p class="intro-tekst-mobile">Træd ind i Sharks i Århus, hvor smagen af ægte amerikanske delikatesser møder pulserende spil og sjove aktiviteter. Her er det ikke bare en diner; det er et sted, hvor kulinariske oplevelser og underholdning smelter sammen og skaber en atmosfære af ren fornøjelse.</p>
+        <br>
+        <p class="intro-tekst-mobile">Træd ind i Sharks i Århus, hvor smagen af ægte amerikanske delikatesser møder pulserende spil og sjove aktiviteter. <br> Her er det ikke bare en diner; det er et sted, hvor kulinariske oplevelser og underholdning smelter sammen og skaber en atmosfære af ren fornøjelse.</p>
+        <br>
         <p class="intro-tekst-desktop">Træd ind i Sharks i Århus, hvor smagen af ægte amerikanske delikatesser møder pulserende spil og sjove aktiviteter. Her er det ikke bare en diner; det er et sted, hvor kulinariske oplevelser og underholdning smelter sammen og skaber en atmosfære af ren fornøjelse.
 
             Start din aften med en bid af den autentiske amerikanske diningoplevelse, hvor saftige burgere, velsmagende hotdogs og krydrede kyllingvinger lokker dine smagsløg. Når sulten er stillet, inviterer det spændende aktivitetsområde dig til at udfordre grænserne for sjov og konkurrence.
@@ -46,38 +81,45 @@
             
             Gør din aften mindeværdig på Sharks i Århus, hvor smag og spil går op i en højere enhed, og hver bid og bevægelse bliver en del af din egen unikke oplevelse. Velkommen til et sted, hvor dining og underholdning bliver til en uovertruffen helhed!
             </p>
-           <img src="front-page-img" alt="billede af folk der spiller pool">
+        
     </div>
         <div class="pool-turnering">
             <div class="background-checkered-top"></div>
-            <!-- <img src="media/checkered-texture.svg" alt="Checkered texture" class="checkered"> -->
-            <img src="media/8-ball-6.webp" alt="8 Ball" class="ball-event">
-            <h2>pool turnering!</h2>
-            <h3>25 nov</h3>
-            <!-- <img src="media/checkered-texture.svg" alt="Checkered texture" class="checkered"> -->
+           <br>
+            <img src="media/8-ball-8.webp" alt="8 Ball" class="ball-event">
+            <h2 class="pool-turnering-tekst">pool turnering!</h2>
+            <h3 class="pool-turnering-dato" >25. november</h3>
+            <br>
+            
             <div class="background-checkered-bottom"></div>
         </div>
-
+        <br>
         <div class="events">
             <div>
-                <h3>HAPPY HOUR</h3>
+                <h3 class="event-title">HAPPY HOUR</h3>
                 <h4>22:00 - 01:00</h4>
                 <h3>UGE 45</h3>
                 <img src="event-drinks" alt="billede af drinks til event">
             </div>
             <div>
-                <h3>KOM MIN<br>5 PERSONER</h3>
+                <h3 class="event-title">KOM MINDST<br>5 PERSONER</h3>
                 <h4>VI GIVER</h4>
                 <h4>FLASKE<br>&<br>MIXER</h4>
             </div>
-       
         </div>
     </main>
     
     <!-- SECTIONS HTML -->
     <section class="aktitiviter">
+        <br>
         <h2>AKTIVITETER</h2>
-        <p class="aktiviteter-mobile">Når du træder ind på Sharks i Århus, åbner der sig en verden af sjove aktiviteter. Udfordr vennerne i en omgang pool, oplev den elektriske stemning ved airhockey, eller prøv dine dartfærdigheder på det elektroniske dartbræt. Lad bolden rulle ved bordfodbold, konkurrer i virtuelle racerløb, og afprøv din heldighed på poker maskinen. Skru op for præcisionen med et spil shuffleboard og skab minder om sjove og konkurrenceprægede stunder på Sharks i Århus.</p>
+        <br>
+        <p class="aktiviteter-mobile">Når du træder ind på Sharks i Århus, åbner der sig en verden af sjove aktiviteter. 
+        Udfordr vennerne i en omgang pool, oplev den elektriske stemning ved airhockey, eller prøv dine dartfærdigheder på det elektroniske dartbræt. 
+            <br><br> Lad bolden rulle ved bordfodbold, konkurrer i virtuelle racerløb, og afprøv dit held på poker maskinen. Skru op for præcisionen med 
+            et spil shuffleboard og skab minder om sjove og konkurrenceprægede stunder på Sharks i Århus.</p>
+        
+        
         <p class="aktiviteter-desktop">
             Når du træder ind på Sharks i Århus, åbner der sig en verden af spændende muligheder og underholdning. Denne unikke poolbar og diner kombinerer gastronomiske oplevelser med et væld af sjove aktiviteter, der gør hvert besøg til en mindeværdig begivenhed.
             
@@ -90,53 +132,61 @@
             Midt i alt dette kaos af sjove aktiviteter er der også plads til afslapning og sociale stunder på shuffleboardsene. Mål din præcision, og planlæg dine strategiske træk, mens du nyder stemningen og selskabet omkring dig.
             
             Sharks i Århus er ikke blot en poolbar og diner; det er en spilfuld oase, der byder på en perfekt kombination af konkurrence, socialt samvær og kulinariske fornøjelser. Så næste gang du leder efter en aften fyldt med sjov, mad og spænding, ved du, hvor du skal tage hen – Sharks venter på at byde dig velkommen i deres unikke verden.</p>
-        <div class="aktivitet-list">
+            <br>
+        
+            <div class="aktivitet-list">
             <div>
                 <img src="media/8-ball-1.webp" alt="8 ball bullets">
                 <h4>AIRHOCKEY</h4>
             </div>
-        <h4>20kr/SPIL</h4>
+        <h4>20 kr. | spil</h4>
         </div>
         <div class="aktivitet-list">
             <div>
                 <img src="media/8-ball-2.webp" alt="8 ball bullets">
                 <h4>BORDFODBOLD</h4>
             </div>
-            <h4>10kr/SPIL</h4>
+            <h4>10 kr. | spil</h4>
         </div>
         <div class="aktivitet-list">
             <div>
                 <img src="media/8-ball-3.webp" alt="8 ball bullets">
                 <h4>RACERBIL-SPIL</h4>
             </div>
-            <h4>10kr/SPIL</h4>
+            <h4>10 kr. | spil</h4>
         </div>
         <div class="aktivitet-list">
             <div>
                 <img src="media/8-ball-4.webp" alt="8 ball bullets">
                 <h4>DART</h4>
             </div>
-            <h4>10kr/SPIL</h4>
+            <h4>10 kr. | spil</h4>
         </div>
         <div class="aktivitet-list">
             <div>
                 <img src="media/8-ball-5.webp" alt="8 ball bullets">
                 <h4>POKER</h4>
             </div>
-            <h4>10kr/SPIL</h4>
+            <h4>10 kr. | spil</h4>
         </div>
+        <br>
 
     </section>
 
     <section class="book-aktivitet">
+        <br>
         <h2>BOOK AKTIVITET</h2>
+        <br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nostrum, rem sed, nihil temporibus voluptatem quasi voluptates, saepe repudiandae omnis possimus voluptas? Sequi deleniti mollitia in ut doloremque accusamus quia!</p>
+        <br>
         <!-- skal laves booking system her -->
     
     </section>
-
+<!-- diner sektion ´ -->
     <section class="diner">
+        <br>
         <h2>SHARKS DINER</h2>
+        <br>
         <p class="diner-tekst-mobile">Træd ind i Sharks i Århus og fordyb dig i en autentisk amerikansk diningoplevelse, hvor smagen af USA møder dansk hygge. Menuen er en symfoni af saftige burgere, krydrede kyllingvinger og overdådige hotdogs, der vækker minder om de bedste amerikanske diner-klassikere.</p>
         <p class="diner-tekst-desktop">Træd ind i Sharks i Århus og fordyb dig i en autentisk amerikansk diningoplevelse, hvor smagen af USA møder dansk hygge. Menuen er en symfoni af saftige burgere, krydrede kyllingvinger og overdådige hotdogs, der vækker minder om de bedste amerikanske diner-klassikere.
 
@@ -145,6 +195,7 @@
             Sharks i Århus er ikke blot et spisested; det er et kulinarisk tilflugtssted, hvor passionen for autentisk amerikansk madlavning skinner igennem hver ret. Atmosfæren er afslappet, og servicen er varm, hvilket gør hvert besøg til en gastronomisk begivenhed.
             
             Uanset om du ønsker at nyde en afslappet frokost eller dele en lækker aftenmåltid med venner og familie, inviterer Sharks i Århus dig til at tage plads ved bordet og opleve en smagsoplevelse, der går ud over det sædvanlige. Velkommen til en verden af velsmagende traditioner og uforglemmelige bider hos Sharks i Århus.</p>
+            <!-- booking til diner -->
         <div class="month">  
             <h2>KALENDER</h2> 
             <br>
@@ -157,15 +208,15 @@
               </li>
             </ul>
           </div>
-          
+          <br>
           <ul class="weekdays">
-            <li>Mon</li>
-            <li>Tue</li>
-            <li>Wed</li>
-            <li>Thu</li>
-            <li>Fri</li>
-            <li>Sat</li>
-            <li>Sun</li>
+            <li>MAN</li>
+            <li>TIR</li>
+            <li>ONS</li>
+            <li>TOR</li>
+            <li>FRE</li>
+            <li>LØR</li>
+            <li>SØN</li>
           </ul>
           
           <ul class="days">  
@@ -201,9 +252,10 @@
             <li>30</li>
             <li>31</li>
           </ul>
+          <br>
+          <input class="book-bord" type="submit" value="BOOK BORD">
           
     </section>
-
     <section class="diner-menu">
 
     </section>
@@ -211,12 +263,56 @@
     <section class="drinks-kort">
 
     </section>
-
+    <!-- Om os sektion -->
+    <br>
+    <h2 class="since">S I N C E</h2>
+    <h2 class="year-1993">1 9 9 3</h2>
+    <br>
     <section class="since-1993">
+     
+      <div class="poolstang"><img src="media/poolstang1993.webp" alt="poolkø med 8 balls"></div>
+      <div class="since-tekst since-tekst1">Sharks Poolhall åbnede dørene den 10. november 1993, grundlagt af Brd. Morten & Jesper Laugesen samt den nu afdøde aarhusianske pizzakonge Michael Lee.</div>
+      <div class="since-tekst since-tekst2">Efter succesen åbnede de allerede året efter en filial i Odense, som de ejede indtil 2009.</div>
+      <div class="since-tekst  since-tekst3">Med 26 poolborde har Sharks etableret sig som Danmarks største poolhall</div>
+      <div class="since-tekst since-tekst4">I 2008 udvidede de oplevelsen ved at introducere Sharks Diner, der serverer verdensklasse-burgere i ægte amerikanerstil.</div>
+      <div class="since-tekst since-tekst5">Sommeren 2015 markerede åbningen af Sports Lounge, hvor gæster kan se en bred vifte af sportsbegivenheder på en imponerende storskærm (3,5×2 meter).</div>
+      <div class="since-tekst since-tekst6"> Loungen byder på hyggelige omgivelser, hvor man kan slappe af og nyde en øl eller en burger fra den populære diner.</div>
+      <div class="since-tekst since-tekst7">Sports Lounge tilbyder en bred vifte af sportsbegivenheder, fra den engelske Premier League til NFL, håndboldmesterskaber og Tour de France.</div>
+      <div class="since-tekst since-tekst8">Sharks Poolhall har udviklet sig til et populært sted for alle aldersgrupper og fortsætter med at tilføje nye dimensioner til oplevelsen, der strækker sig ud over poolspil.</div>
 
     </section>
-
+<!--kontakt formular sektion-->
     <section class="kontakt">
+        <form>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 16px;">
+                <div style="width: 48%;">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" placeholder="Dit Navn" required>
+                </div>
+                <div style="width: 48%;">
+                    <label for="phone"></label>
+                    <input type="tel" id="phone" name="phone" placeholder="Dit Telefonnummer" required>
+                </div>
+            </div>
+        
+            <div style="display: flex; justify-content: space-between; margin-bottom: 16px;">
+                <div style="width: 48%;">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Din Email" required>
+                </div>
+                <div style="width: 48%;">
+                    <label for="firm"></label>
+                    <input type="text" id="firm" name="firm" placeholder="Dit Firma (valgfrit)">
+                </div>
+            </div>
+        
+            <div>
+                <label for="message"></label>
+                <textarea id="message" name="message" rows="4" placeholder="Din Besked" required></textarea>
+            </div>
+        
+            <input type="submit" value="Send" class="kontakt-button">
+        </form>
 
     </section>
 
@@ -225,11 +321,11 @@
     
     <footer class="footer">
             <div class="social">
-                <a href="https://www.facebook.com/sharksaarhus/?locale=da_DK"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/sharkspoolhallogdiner/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.google.com/maps/place/Sharks/@56.1555213,10.2036504,17z/data=!3m1!4b1!4m6!3m5!1s0x464c3f93ddfeacb3:0xd805db22a7d13f2d!8m2!3d56.1555213!4d10.2062253!16s%2Fg%2F11b8072jw7?entry=ttu">
-                <i class="fa-regular fa-location-dot"></i></a>
-                <a href="https://www.findsmiley.dk/48948"><i class="fa-regular fa-face-smile"></i></a>
+                <a href="https://www.facebook.com/sharksaarhus/?locale=da_DK" target=”_blank”><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/sharkspoolhallogdiner/" target=”_blank”><i class="fab fa-instagram"></i></a>
+                <a href="https://www.google.com/maps/place/Sharks/@56.1555213,10.2036504,17z/data=!3m1!4b1!4m6!3m5!1s0x464c3f93ddfeacb3:0xd805db22a7d13f2d!8m2!3d56.1555213!4d10.2062253!16s%2Fg%2F11b8072jw7?entry=ttu" target=”_blank”>
+                <i class="fa-solid fa-location-dot"></i></a>
+                <a href="https://www.findsmiley.dk/48948" target=”_blank”><i class="fa-regular fa-face-smile"></i></a>
                 
             </div>
     

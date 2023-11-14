@@ -33,72 +33,134 @@ ul {
 /* Navigations css */
 .hamburger-icon {
     display: none;
-  }
-  .logo img {
-    height: 100px;
-  }
-  
-  header {
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: var(--red);
-  }
-  .logo-text{
-    color:white;
-  }
-  
-  .hamburger-icon{
-    border:none;
-    background-color:transparent;
-  }
-  
-  .hamburger-icon .fa-bars,
-  .hamburger-icon .fa-x{
-    color:white;
-    font-size:1rem;
-    cursor:pointer;
-  }
-  
-  .hamburger-icon input[type="checkbox"] {
-    appearance: none;
-  }
-  
-  .navigation {
-    display: flex;
-    gap: 1rem;
-  }
-  .navigation a{
-    color:white
-  }
+}  
+.mobile-nav {
+  position:sticky;
+  top:0;
+  left:0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--black);
+}
+.logo img {
+  filter: invert(97%) sepia(41%) saturate(362%) hue-rotate(313deg) brightness(100%) contrast(94%);
+  height: 100px;
+}
+
+.hamburger-icon{
+  border:none;
+  background-color:transparent;
+}
+
+.hamburger-icon .fa-bars,
+.hamburger-icon .fa-x{
+  color: var(--beige);
+  font-size:1rem;
+  cursor:pointer;
+}
+.hamburger-icon .fa-x {
+  display: none;
+}
+
+.hamburger-icon input[type="checkbox"] {
+  appearance: none;
+}
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+}
+.navigation a{
+  color: var(--beige);
+}
+.desktop-nav {
+  position: sticky;
+  top:0;
+  left:0;
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--black);
+}
+.desktop-nav ul{
+  display: flex;
+  gap: 4.5rem; 
+}
+.desktop-nav ul li a {
+  color: var(--beige);
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+}
+
+.desktop-nav .left-links ul li.dropdown .dropdown-content {
+  display: none;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
   
 /* Styling af main page */
-
+.front-image{
+  width: 100%;
+  height: 300px;
+  background-image: url(/media/breakingpool.jpeg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+.front-image h1{
+  background-color: rgba(0, 0, 0, 0.6);
+  height: auto;
+  width: auto;
+  padding: 0.25rem;
+}
+.intro-tekst-mobile{
+  margin-left: 15px;
+  margin-right: 15px;
+}
 .intro-tekst-desktop{
-  display: none;
+    display: none;
 }
 .pool-turnering{
     text-transform: uppercase;
     text-align: center;
-  
+    background-color: var(--green);
+    color: white;
 }
-/* .background-checkered-top{
+.pool-turnering-tekst{
+  letter-spacing: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.pool-turnering-dato{
+  letter-spacing: 0.25rem;
+}
+.background-checkered-top{
+  width: 100%;
+  height: 50px;
   background-image: url(/media/checkered-texture.svg);
    background-position: top;
    background-repeat: no-repeat;
    background-size: 300%;
 }
 .background-checkered-bottom{
+  width: 100%;
+  height: 50px;
   background-image: url(/media/checkered-texture.svg);
    background-position: bottom;
    background-repeat: no-repeat;
    background-size: 300%;
-} */
+}
 .checkered{
   height: 50px;
   object-fit: contain;
@@ -113,22 +175,35 @@ ul {
     gap: 20px;
 }
 .events div{
-background-color: purple;
+background-color: var(--black);
+color: white;
 width: 12.5rem;
+height: 10rem;
 text-align: center;
 }
+.event-title{
+  font-weight: bolder;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
 
-/* stying af Aktiviteter */
-.aktitiviter {
+/* styling af Aktiviteter */
+.aktiviteter {
     width: 100%;
     display: grid;
     justify-content: center;
-    text-align: center;
-
 }
+
+h2{
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+}
+
 .aktitiviter .aktivitet-list{
     display: flex;
     justify-content: space-between;
+    padding-right: 18px;
     
 }
 .aktivitet-list div{
@@ -137,30 +212,53 @@ text-align: center;
 }
 .aktivitet-list img{
  height: 30px;
- 
+ padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+.aktivitet-list h4{
+  letter-spacing: 0.1rem;
+}
+.aktiviteter-mobile{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: auto;
 }
 .aktiviteter-desktop{
   display: none;
 }
+.aktiviteter-mobile{
+  max-width: 400px;
+}
 /* Styling af Booking system til aktiviteter */
 .book-aktivitet {
-    background-color: var(--green);
+    background-color: var(--red);
+    color: var(--beige);
     width: 100%;
     display: grid;
   justify-items: center;
 }
+.book-aktivitet p{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: auto;
+}
 
 /* styling a Diner sektionen */
 .diner {
-    background-color: var(--red);
+    background-color: var(--beige);
     width: 100%;
+    height: 840px;
   text-align: center;
+}
+.diner-tekst-mobile{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: auto;
 }
   .diner-tekst-desktop{
     display: none;
   }
   .month {
-    padding: 70px 25px;
+    padding: 50px 25px 10px 25px;
     width: 100%;
     text-align: center;
   }
@@ -204,6 +302,7 @@ text-align: center;
     padding: 0 0;
     background: #eee;
     margin: 0;
+    
   
   }
   
@@ -211,7 +310,6 @@ text-align: center;
     list-style-type: none;
     display:inline-block;
     width: 13.6%;
-    text-align: center;
     font-size:12px;
     color: #777;
     border:1px solid;
@@ -220,7 +318,7 @@ text-align: center;
   
   .days li .active {
   
-    background: #1abc9c;
+    background: grey;
     color: white !important
   }
   .days li .active {
@@ -229,34 +327,110 @@ text-align: center;
   .weekdays li, .days li {
       width: 13.1%;
   }
+  .days a:hover{
+    background-color: #32623F;
+    color: black;
+  }
   
-  
-  
+.book-bord {
+  border-radius: 30px;
+  width: 120px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  color: grey;
+  background: white; 
+}
+
 
 /* Styling af Diner menu sektionen */
 .diner-menu {
-    height: 300px;
-    background-color: var(--green);
+    background-image: url(/media/sharks_burgermenu.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+    height: 700px;
 }
 /* Styling af Drinks kort sektionen */
 .drinks-kort {
-    height: 300px;
-    background-color: var(--red);
+    background-image: url(/media/sharks_drinkskort.webp);
+    background-repeat: no-repeat;
     width: 100%;
+    background-size: cover;
+    height: 700px;
 }
 /* Styling af Om os */
-.since-1993 {
-    height: 300px;
-    background-color: var(--green);
-    width: 100%;
+
+.since{
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
 }
+.year-1993{
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.since-1993 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  .since-1993 h2{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+
+  }
+  .since-tekst1 { grid-area: 1 / 1 / 2 / 2; }
+  .poolstang { grid-area: 1 / 2 / 9 / 3; 
+    justify-self: center;
+    }
+  .since-tekst2 { grid-area: 2 / 3 / 3 / 4; }
+  .since-tekst3 { grid-area: 3 / 1 / 4 / 2; }
+  .since-tekst4 { grid-area: 4 / 3 / 5 / 4; }
+  .since-tekst5 { grid-area: 5 / 1 / 6 / 2; }
+  .since-tekst6 { grid-area: 6 / 3 / 7 / 4; }
+  .since-tekst7 { grid-area: 7 / 1 / 8 / 2; }
+  .since-tekst8 { grid-area: 8 / 3 / 9 / 4; }
+
+
 /* Styling af Kontakt formularen */
 .kontakt {
-    height: 300px;
+    
     background-color: var(--red);
     width: 100%;
+    
 }
+    form{
+      max-width: 400px;
+      margin: auto;
+      
+  }
+
+  label {
+      display: block;
+      margin-bottom: 8px;
+  }
+
+  input, textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+  }
+
+  form input[type="submit"] {
+      background-color: gray;
+      color: white;
+      cursor: pointer;
+  }
+
+  form input[type="submit"]:hover {
+      background-color: green;
+  }
+
 
 
 /* Styling af footer */
@@ -321,10 +495,12 @@ opacity: 1;
 /* Mobile query */
 
 @media screen and (max-width: 480px) {
-    header {
+      .desktop-nav {
+        display: none;
+      }
+  
+      .mobile-nav {
         display: block;
-       
-
       }
       .navigation {
         height:0;
@@ -335,20 +511,24 @@ opacity: 1;
       }
       .logo {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
       }
       .logo img {
-        height: 20px
+        height: 50px;
       }
       .hamburger-icon {
         display: block;
+        align-items: center;
+        position: absolute;
+        top: 1.5rem;
+        left: 1.25rem;
       }
       .fa-x{
         display:none;
       }
       header:has(.hamburger-icon input[type="checkbox"]:checked) .navigation {
         margin-top: 1rem;
-        height:120px;
+        height:230px;
       }
       header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
         display:none;
@@ -356,6 +536,7 @@ opacity: 1;
       header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
         display:inline-block;
       }
+      
 
       /* aktiviteter tekst */
      
@@ -366,7 +547,9 @@ opacity: 1;
 
 /* Tablet query */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-    
+  .mobile-nav {
+    display: none;
+  }  
    
         
 }
@@ -377,10 +560,18 @@ opacity: 1;
   .aktiviteter-mobile{
     display: none;
   }
-body{
-  margin-left: 300px;
-  margin-right: 300px;
-}
+  section{
+
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  main{
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  .mobile-nav {
+    display: none;
+  }
 
 }
 
