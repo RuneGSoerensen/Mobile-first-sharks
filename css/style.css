@@ -1,12 +1,12 @@
 /* Vores root variables.  */
 
 :root {
---beige: #F6EDDB;
---black: #2E2E2E;
---green: #32623F;
---red: #89081E;
---h1: 2rem;
---desktop: 50%;
+  --beige: #f6eddb;
+  --black: #2e2e2e;
+  --green: #32623f;
+  --red: #89081e;
+  --h1: 2rem;
+  --desktop: 50%;
 }
 
 html {
@@ -14,35 +14,34 @@ html {
 }
 
 /* Reset global */
-    
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "zenon", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "zenon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-body{
-    background-color: var(--beige);
+body {
+  background-color: var(--beige);
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 /* Navigations css */
 .hamburger-icon {
-    display: none;
-}  
+  display: none;
+}
 .mobile-nav {
-  position:sticky;
-  top:0;
-  left:0;
+  position: sticky;
+  top: 0;
+  left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -51,21 +50,20 @@ ul {
   background-color: var(--black);
 }
 .logo img {
-  filter: invert(97%) sepia(41%) saturate(362%) hue-rotate(313deg) brightness(100%) contrast(94%);
-  height: 100px;
-  
+  filter: invert(97%) sepia(41%) saturate(362%) hue-rotate(313deg)
+    brightness(100%) contrast(94%);
 }
 
-.hamburger-icon{
-  border:none;
-  background-color:transparent;
+.hamburger-icon {
+  border: none;
+  background-color: transparent;
 }
 
 .hamburger-icon .fa-bars,
-.hamburger-icon .fa-x{
+.hamburger-icon .fa-x {
   color: var(--beige);
-  font-size:1rem;
-  cursor:pointer;
+  font-size: 1rem;
+  cursor: pointer;
 }
 .hamburger-icon .fa-x {
   display: none;
@@ -79,23 +77,23 @@ ul {
   display: flex;
   gap: 1rem;
 }
-.navigation a{
+.navigation a {
   color: var(--beige);
 }
 .desktop-nav {
   position: sticky;
-  top:0;
-  left:0;
-  width:100%;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 10px 20px;
   background-color: var(--black);
 }
-.desktop-nav ul{
+.desktop-nav ul {
   display: flex;
-  gap: 4.5rem; 
+  gap: 4.5rem;
 }
 .desktop-nav ul li a {
   color: var(--beige);
@@ -119,22 +117,20 @@ ul {
 }
 .desktop-nav .dropdown .dropdown-content li a {
   font-size: 16px;
-  
 }
-.desktop-nav .dropdown .dropdown-content{
+.desktop-nav .dropdown .dropdown-content {
   display: none;
-
 }
 .desktop-nav .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .right-links {
-  width:22%;
+  width: 15rem;
 }
-  
+
 /* Styling af main page */
-.front-image{
+.front-image {
   width: 100%;
   height: 300px;
   background-image: url(/media/breakingpool.jpeg);
@@ -145,71 +141,56 @@ ul {
   text-align: center;
   z-index: 1;
 }
-.front-image h1{
+.front-image h1 {
   background-color: rgba(0, 0, 0, 0.6);
   height: auto;
   width: auto;
   padding: 0.25rem;
 }
-.intro-tekst-mobile{
+.intro-tekst-mobile {
   margin: auto;
   max-width: 25rem;
 }
-.intro-tekst-desktop{
-    display: none;
+.intro-tekst-desktop {
+  display: none;
 }
-.pool-turnering{
-    text-transform: uppercase;
-    text-align: center;
-    background-color: var(--green);
-    color: white;
+.pool-turnering {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--green);
+  color: white;
 }
-.pool-turnering-tekst{
+.pool-turnering-tekst {
   letter-spacing: 0.5rem;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
-.pool-turnering-dato{
+.pool-turnering-dato {
   letter-spacing: 0.25rem;
 }
-.background-checkered-top{
-  width: 100%;
-  height: 50px;
-  background-image: url(/media/checkered-texture.svg);
-   background-position: top;
-   background-repeat: no-repeat;
-   background-size: 300%;
-}
-.background-checkered-bottom{
-  width: 100%;
-  height: 50px;
-  background-image: url(/media/checkered-texture.svg);
-   background-position: bottom;
-   background-repeat: no-repeat;
-   background-size: 300%;
-}
-.checkered{
-  height: 50px;
-  object-fit: contain;
 
-}
-.ball-event{
+.ball-event {
   height: 100px;
 }
-.events{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.events {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
-.events div{
-background-color: var(--black);
-color: white;
-width: 12.5rem;
-height: 10rem;
-text-align: center;
+.events div {
+  background-color: var(--black);
+  color: white;
+  width: 12.5rem;
+  height: 10rem;
+  text-align: center;
 }
-.event-title{
+.events img {
+  width: 15%;
+  display: block;
+  margin: auto;
+}
+.event-title {
   font-weight: bolder;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -217,152 +198,138 @@ text-align: center;
 
 /* styling af Aktiviteter */
 .aktiviteter {
-    width: 100%;
-    display: grid;
-    justify-content: center;
+  width: 100%;
+  display: grid;
+  justify-content: center;
 }
 
-h2{
+h2 {
   text-align: center;
   font-weight: 600;
   letter-spacing: 0.25rem;
 }
 
-.aktitiviter .aktivitet-list{
-    display: flex;
-    justify-content: space-between;
-    padding-right: 18px;
-    
+.aktitiviter .aktivitet-list {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 18px;
 }
-.aktivitet-list div{
-    display: flex;
-    justify-content: center;
+.aktivitet-list div {
+  display: flex;
+  justify-content: center;
 }
-.aktivitet-list img{
- height: 30px;
- padding: 0.5rem 0.5rem 0.5rem 1rem;
+.aktivitet-list img {
+  height: 1.875rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
 }
-.aktivitet-list h4{
+.aktivitet-list h4 {
   letter-spacing: 0.1rem;
 }
-.aktiviteter-mobile{
+.aktiviteter-mobile {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   margin: auto;
 }
-.aktiviteter-desktop{
+.aktiviteter-desktop {
   display: none;
 }
-.aktiviteter-mobile{
+.aktiviteter-mobile {
   max-width: 25rem;
 }
 /* Styling af Booking system til aktiviteter */
 .book-aktivitet {
-    background-color: var(--red);
-    color: var(--beige);
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 1rem;
-    
+  background-color: var(--red);
+  color: var(--beige);
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 1rem;
 }
-.book-aktivitet p{
+.book-aktivitet p {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   margin: auto;
   max-width: 25rem;
 }
-.aktivitet-booking-img{
+.aktivitet-booking-img {
   display: flex;
   justify-content: center;
 }
-.aktivitet-booking{
+.aktivitet-booking {
   width: 80%;
 }
-.book-bord-margin{
 
-}
 /* styling a Diner sektionen */
 .diner {
-    background-color: var(--beige);
-    width: 100%;
-    height: 840px;
-
-  
+  background-color: var(--beige);
+  width: 100%;
+  height: auto;
 }
-.diner-tekst-mobile{
+.diner-tekst-mobile {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   margin: auto;
   max-width: 25rem;
-  
 }
-  .diner-tekst-desktop{
-    display: none;
-  }
-  .month {
-    padding: 50px 25px 10px 25px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .month ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .month ul li {
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-  
-  }
-  
-  .month .prev {
-    float: left;
-    padding-top: 10px;
-  }
-  
-  .month .next {
-    float: right;
-    padding-top: 10px;
-  }
-  
-  .weekdays {
-    margin: 0;
-    padding: 10px 0;
-    background-color: #ddd;
-  }
-  
-  .weekdays li {
-    display: inline-block;
-    width: 13.6%;
-    color: #666;
-    text-align: center;
-  }
-  
-  .days {
-    padding: 0 0;
-    background: #eee;
-    margin: 0
-    
-  
-  }
+.diner-tekst-desktop {
+  display: none;
+}
+.month {
+  padding: 50px 25px 10px 25px;
+  width: 100%;
+  text-align: center;
+}
 
-  .days li {
-    list-style-type: none;
-    display:inline-block;
-    width: 13.6%;
-    font-size:12px;
-    color: #777;
-    border:1px solid;
-    padding: 15px 15px;
-    text-align: center;
+.month ul {
+  margin: 0;
+  padding: 0;
+}
 
-  }
-  
+.month ul li {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
 
- 
-  
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 0 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  font-size: 12px;
+  color: #777;
+  border: 1px solid;
+  padding: 15px 15px;
+  text-align: center;
+}
+
 .book-bord {
   border-radius: 30px;
   width: 120px;
@@ -370,46 +337,44 @@ h2{
   margin-bottom: 2px;
   color: grey;
   background: white;
- 
 }
-.book-bord-button{
+.book-bord-button {
   display: grid;
   justify-items: center;
 }
 
-
 /* Styling af Diner menu sektionen */
 .diner-menu {
-    background-image: url(/media/sharks-menukort.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 845px;
-    margin: 0 auto;
-    width: 100%;
-    
+  background-image: url(/media/sharks-menukort.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 845px;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 100%;
 }
 /* Styling af Drinks kort sektionen */
 .drinks-kort {
-    background-image: url(/media/sharks-barkort.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 845px;
-    margin: 0 auto;
-    width: 100%;
+  background-image: url(/media/sharks-barkort.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 845px;
+  margin: 0 auto;
+  width: 100%;
 }
 /* Styling af Om os */
-.since-1993background{
+.since-1993background {
   background-color: var(--green);
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
-.since{
+.since {
   font-size: 3rem;
   letter-spacing: 0.2rem;
   font-weight: 400;
-  color: var(--beige);  
+  color: var(--beige);
 }
-.year-1993{
+.year-1993 {
   font-size: 5rem;
   font-weight: bold;
   color: var(--beige);
@@ -424,152 +389,158 @@ h2{
   grid-template-rows: repeat(9, 10.5rem);
   grid-column-gap: 15px;
   grid-row-gap: 0px;
-  }
-  .since-1993 h2{
-    display: grid;
-    justify-content: center;
-    text-align: center;
+}
+.since-1993 h2 {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.since-tekst {
+  color: var(--beige);
+}
+.since-tekst:nth-child(odd) {
+  text-align: right;
+}
 
-  }
-  .since-tekst {
-    color: var(--beige);
-  }
-  .since-tekst:nth-child(odd) {
-    text-align: right;
-  }
-
-  
-  .poolstang {
-    grid-area: 1 / 2 / 9 / 3; }
-  .since-tekst1 {
-    grid-area: 1 / 1 / 2 / 2; }
-  .since-tekst2 {
-    grid-area: 2 / 3 / 3 / 4; }
-  .since-tekst3 {
-    grid-area: 3 / 1 / 4 / 2; }
-  .since-tekst4 {
-    grid-area: 4 / 3 / 5 / 4; }
-  .since-tekst5 {
-    grid-area: 5 / 1 / 6 / 2; }
-  .since-tekst6 {
-    grid-area: 6 / 3 / 7 / 4; }
-  .since-tekst7 {
-    grid-area: 7 / 1 / 8 / 2; }
-  .since-tekst8 {
-    grid-area: 8 / 3 / 9 / 4; }
-
-
+.poolstang {
+  grid-area: 1 / 2 / 9 / 3;
+}
+.since-tekst1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.since-tekst2 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.since-tekst3 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.since-tekst4 {
+  grid-area: 4 / 3 / 5 / 4;
+}
+.since-tekst5 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+.since-tekst6 {
+  grid-area: 6 / 3 / 7 / 4;
+}
+.since-tekst7 {
+  grid-area: 7 / 1 / 8 / 2;
+}
+.since-tekst8 {
+  grid-area: 8 / 3 / 9 / 4;
+}
 
 /* Styling af Kontakt formularen */
 .kontakt {
-    
-    background-color: var(--beige);
-    width: 100%;
-    height: 24rem;
+  background-color: var(--beige);
+  width: 100%;
+  height: 24rem;
 }
-    form{
-      max-width: 25rem;
-      margin: auto;
-      
-  }
+form {
+  max-width: 25rem;
+  margin: auto;
+}
 
-  label {
-      display: block;
-      margin-bottom: 8px;
-  }
+label {
+  display: block;
+  margin-bottom: 8px;
+}
 
-  input, textarea {
-      width: 100%;
-      padding: 8px;
-      box-sizing: border-box;
-      margin-top: 0.5rem;
-  }
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+}
 
-  form input[type="submit"] {
-      background-color: white;
-      color: grey;
-      border-radius: 30px;
-      width: 120px;
-      margin-top: 6px;
-      margin-bottom: 2px;
-      cursor: pointer;
-      
-  }
+form input[type="submit"] {
+  background-color: white;
+  color: grey;
+  border-radius: 30px;
+  width: 120px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
 
-  form input[type="submit"]:hover {
-      background-color: green;
-  }
-  .kontaktlabel {
-    display: flex; justify-content: space-between; margin-bottom: 16px
-  }
- .kontaktstørrelse{
+form input[type="submit"]:hover {
+  background-color: green;
+}
+.kontaktlabel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.kontaktstørrelse {
   width: 48%;
- }
-.kontaktstørrelse-top{
+}
+.kontaktstørrelse-top {
   margin-top: 2rem;
 }
 
 /* Styling af footer */
 
 footer {
-    background-color: var(--black);
-    width: 100%;
-    bottom: 0;
+  background-color: var(--black);
+  width: 100%;
+  bottom: 0;
 }
-.footer, .social{
-    text-align: center;
-    padding-bottom: 25px;
-    color: var(--beige);
-}
-
-.social a{
-    font-size: 22px;
-    color: inherit;
-    border: 1px solid var(--beige);
-    width: 2.5rem;
-    height: 2.5rem;
-    line-height: 38px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 8px;
-    margin-top: 1.5rem
-}
-.social a:hover{
-opacity: 0.9;
+.footer,
+.social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: var(--beige);
 }
 
-.footer ul{
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 1.125rem;
-    line-height: 1.6;
-    margin-bottom: 0;
+.social a {
+  font-size: 22px;
+  color: inherit;
+  border: 1px solid var(--beige);
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  margin-top: 1.5rem;
+}
+.social a:hover {
+  opacity: 0.9;
 }
 
-.footer ul li{
-display: inline-block;
-padding: 0 0.938rem;
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 0;
 }
 
-.footer ul li a{
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
+.footer ul li {
+  display: inline-block;
+  padding: 0 0.938rem;
+}
+
+.footer ul li a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 .footer ul li a:hover {
-opacity: 1;
+  opacity: 1;
 }
-.footer, .copyright{
-    text-align: center;
-    font-size: 0.813rem;
-    color: var(--beige);
-    
+.footer,
+.copyright {
+  text-align: center;
+  font-size: 0.813rem;
+  color: var(--beige);
 }
- /* back to top button */
-      
+/* back to top button */
+
 #myBtn {
   position: fixed;
   bottom: 20px;
@@ -582,110 +553,311 @@ opacity: 1;
   background-color: var(--black);
   border-radius: 50%;
 }
-#myBtn a{
+#myBtn a {
   color: white;
 }
 
 /* Mobile query */
 
 @media screen and (max-width: 480px) {
-      .desktop-nav {
-        display: none;
-      }
-      .since-1993background{
-        width: 100%;
-      }
-     
-  
-      .mobile-nav {
-        display: block;
-      }
-      .navigation {
-        height:0;
-        overflow:hidden;
-        flex-direction: column;
-        align-items: center;
-        transition:all 0.5s ease-in-out;
-      }
-      .logo {
-        display: flex;
-        justify-content: space-evenly;
-      }
-      .logo img {
-        height: 50px;
-      }
-      .hamburger-icon {
-        display: block;
-        align-items: center;
-        position: absolute;
-        top: 1.5rem;
-        left: 1.25rem;
-      }
-      .fa-x{
-        display:none;
-      }
-      header:has(.hamburger-icon input[type="checkbox"]:checked) .navigation {
-        margin-top: 1rem;
-        height:230px;
-      }
-      header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
-        display:none;
-      }
-      header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
-        display:inline-block;
-      }
-      
+  .desktop-nav {
+    display: none;
+  }
+  .since-1993background {
+    width: 100%;
+  }
 
-      /* aktiviteter tekst */
-     
-     
+  .mobile-nav {
+    display: block;
+  }
+  .navigation {
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .logo img {
+    width: 50px;
+  }
 
+  .hamburger-icon {
+    display: block;
+    align-items: center;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.25rem;
+  }
+  .fa-x {
+    display: none;
+  }
+  header:has(.hamburger-icon input[type="checkbox"]:checked) .navigation {
+    margin-top: 1rem;
+    height: 230px;
+  }
+  header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+    display: none;
+  }
+  header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
+    display: inline-block;
+  }
+  .event-3 {
+    display: none;
+  }
+  .drinks-kort-tablet {
+    display: none;
+  }
+  .diner-menu-tablet {
+    display: none;
+  }
+
+  .background-checkered-top img {
+    transform: scale(2);
+  }
+
+  .background-checkered-top {
+    overflow: hidden;
+  }
+  .background-checkered-bottom {
+    overflow: hidden;
+  }
+  .background-checkered-bottom img {
+    transform: scale(2);
+  }
+  /* aktiviteter tekst */
 }
- 
-
- 
 
 /* Tablet query */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .mobile-nav {
+    display: block;
+  }
+  .front-image {
+    height: 31.25rem;
+  }
+  .intro-tekst-desktop {
+    display: block;
+    max-width: 600px;
+    margin: auto;
+  }
+  .intro-tekst-mobile {
     display: none;
-  }  
+  }
+
+  .logo img {
+    height: 90px;
+  }
+  .navigation {
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .logo img {
+    height: 50px;
+  }
+  .hamburger-icon {
+    display: block;
+    align-items: center;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.25rem;
+  }
+  .fa-x {
+    display: none;
+  }
+  header:has(.hamburger-icon input[type="checkbox"]:checked) .navigation {
+    margin-top: 1rem;
+    height: 230px;
+  }
+  header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-bars {
+    display: none;
+  }
+  header:has(.hamburger-icon input[type="checkbox"]:checked) .fa-x {
+    display: inline-block;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
   .desktop-nav ul li a {
     color: var(--);
     font-size: 0.7rem;
     letter-spacing: 0.1rem;
     padding: 10px;
   }
-  .weekdays li, .days li {
+  .weekdays li,
+  .days li {
     width: 13.1%;
   }
-        
+  .aktivitet-list {
+    max-width: 600px;
+    margin: auto;
+  }
+  .aktivitet-list img {
+    padding: 0.25rem;
+  }
+  .aktiviteter-desktop {
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+  }
+  .aktiviteter-mobile {
+    display: none;
+  }
+  .aktivitet-booking-img {
+    width: 60%;
+    margin: auto;
+  }
+  .diner-tekst-mobile {
+    display: none;
+  }
+  .diner-tekst-desktop {
+    display: block;
+    max-width: 600px;
+    margin: auto;
+  }
+  .since-1993background {
+    width: 100%;
+  }
+
+  .diner-menu {
+    display: none;
+  }
+
+  .drinks-kort {
+    display: none;
+  }
+  .drinks-kort-tablet img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .diner-menu-tablet img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+  }
+  #book-bord {
+    max-width: 70%;
+    margin: auto;
+  }
+  .days {
+    max-width: 70%;
+    margin: auto;
+  }
+  .weekdays {
+    max-width: 70%;
+    margin: auto;
+  }
+  .kontakt-form {
+  }
 }
 
 /* Desktop query */
 @media screen and (min-width: 1025px) {
-   
-  .aktiviteter-mobile{
+  .aktiviteter-mobile {
     display: none;
   }
   .mobile-nav {
     display: none;
   }
-  .weekdays li, .days li {
+  .weekdays li,
+  .days li {
     width: 13.1%;
-}
-  /* .kontakt {
-    width: var(--desktop);
-  } */
-  /* .diner {
-    width: var(--desktop);
-  } */
+  }
+  .intro-tekst-desktop {
+    display: block;
+    max-width: 600px;
+    margin: auto;
+  }
+  .intro-tekst-mobile {
+    display: none;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .aktivitet-list {
+    max-width: 600px;
+    margin: auto;
+  }
+  .aktivitet-list img {
+    padding: 0.25rem;
+  }
+  .aktiviteter-desktop {
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+  }
+  .aktiviteter-mobile {
+    display: none;
+  }
+  .aktivitet-booking-img {
+    width: 60%;
+    margin: auto;
+  }
+
+  #book-bord {
+    max-width: 70%;
+    margin: auto;
+  }
+  .days {
+    max-width: 70%;
+    margin: auto;
+  }
+  .weekdays {
+    max-width: 70%;
+    margin: auto;
+  }
+
+  .diner-menu {
+    display: none;
+  }
+
+  .drinks-kort {
+    display: none;
+  }
+  .drinks-kort-tablet img {
+    width: 60%;
+    display: block;
+    margin: auto;
+  }
+
+  .diner-menu-tablet img {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .diner-tekst-mobile {
+    display: none;
+  }
+  .diner-tekst-desktop {
+    display: block;
+    max-width: 600px;
+    margin: auto;
+  }
+  .since-1993 {
+    grid-template-columns: 15.5rem 60px 15.5rem;
+    grid-template-rows: repeat(9, 10.5rem);
+    grid-column-gap: 5rem;
+  }
+
   .book-aktivitet {
     width: var(--desktop);
   }
-  /* .drinks-kort {
-    width: var(--desktop);
-  } */
 }
-
-  
