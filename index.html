@@ -13,7 +13,7 @@
 <body>
     <header class="mobile-nav">
         <div class="logo">
-            <img src="media/sharks-logo.svg" alt="">
+            <a href="#Home"><img src="media/sharks-logo.svg" alt=""></a>
         </div>
         <div class="hamb-icon-container">
         <button class="hamburger-icon">
@@ -24,52 +24,50 @@
             <input type="checkbox" id="dropdown" />
         </button>
         <ul class="navigation">
-            <li><a href="#">AKTIVITETER</a></li>
-            <li><a href="#">BOOK AKTIVITET</a></li>
-            <li><a href="#">DINER</a></li>
-            <li><a href="#">BOOK DINER</a></li>
-            <li><a href="#">BAR</a></li>
-            <li><a href="#">OM OS</a></li>
+            <li><a href="#aktitiviter">AKTIVITETER</a></li>
+            <li><a href="#book-aktivitet">BOOK AKTIVITET</a></li>
+            <li><a href="#diner">DINER</a></li>
+            <li><a href="#book-bord">BOOK DINER</a></li>
+            <li><a href="#drinks">BAR</a></li>
+            <li><a href="#since-1993">OM OS</a></li>
           </ul>
         </div>
       </header>
       <div class="desktop-nav">
-        <div class="left-links dekstop-links">
+        <div class="left-links">
             <ul>
                 <li class="dropdown">
-                    <a href="#">AKTIVITETER</a>
+                    <a href="#aktitiviter">AKTIVITETER</a>
                     <ul class="dropdown-content">
-                        <li><a href="#">BOOK AKTIVITET</a></li>
+                        <li><a href="#book-aktivitet">BOOK AKTIVITET</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#">DINER</a>
+                    <a href="#diner">DINER</a>
                     <ul class="dropdown-content">
-                        <li><a href="#">BOOK DINER</a></li>
+                        <li class="dropdown-item"><a href="#book-bord">BOOK BORD</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
         <div class="logo">
-            <img src="media/sharks-logo.svg" alt="">
+            <a href="#Home"><img src="media/sharks-logo.svg" alt=""></a>
         </div>
         <div class="right-links">
             <ul>
-                <li><a href="#">BAR</a></li>
-                <li><a href="#">OM OS</a></li>
+                <li><a href="#drinks">BAR</a></li>
+                <li><a href="#since-1993">OM OS</a></li>
             </ul>
         </div>
       </div>
-
-    
     <!-- MAIN CONTENT HTML -->
     <main class="front-page">
         <div class="front-image">
-            <h1>Velkommen til Sharks Århus</h1>
+            <h1 id="Home">Velkommen til Sharks Århus</h1>
         </div>
         <div>
         <br>
-        <p class="intro-tekst-mobile">Træd ind i Sharks i Århus, hvor smagen af ægte amerikanske delikatesser møder pulserende spil og sjove aktiviteter. <br> Her er det ikke bare en diner; det er et sted, hvor kulinariske oplevelser og underholdning smelter sammen og skaber en atmosfære af ren fornøjelse.</p>
+        <p class="intro-tekst-mobile">Træd ind i Sharks i Århus, hvor smagen af ægte amerikanske delikatesser møder pulserende spil og sjove aktiviteter. Her er det ikke bare en diner; det er et sted, hvor kulinariske oplevelser og underholdning smelter sammen og skaber en atmosfære af ren fornøjelse.</p>
         <br>
         <p class="intro-tekst-desktop">Træd ind i Sharks i Århus, hvor smagen af ægte amerikanske delikatesser møder pulserende spil og sjove aktiviteter. Her er det ikke bare en diner; det er et sted, hvor kulinariske oplevelser og underholdning smelter sammen og skaber en atmosfære af ren fornøjelse.
 
@@ -83,6 +81,7 @@
             </p>
         
     </div>
+
         <div class="pool-turnering">
             <div class="background-checkered-top"></div>
            <br>
@@ -110,7 +109,7 @@
     </main>
     
     <!-- SECTIONS HTML -->
-    <section class="aktitiviter">
+    <section id="aktitiviter" class="aktitiviter">
         <br>
         <h2>AKTIVITETER</h2>
         <br>
@@ -173,17 +172,19 @@
 
     </section>
 
-    <section class="book-aktivitet">
+    <section id="book-aktivitet" class="book-aktivitet">
         <br>
         <h2>BOOK AKTIVITET</h2>
         <br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nostrum, rem sed, nihil temporibus voluptatem quasi voluptates, saepe repudiandae omnis possimus voluptas? Sequi deleniti mollitia in ut doloremque accusamus quia!</p>
         <br>
-        <!-- skal laves booking system her -->
+        
+        <div class="aktivitet-booking-img"><img src="media/booking-system-aktiviteter.webp" alt="aktivitets booking system" class="aktivitet-booking"> </div>
+       <div class="book-bord-button book-bord-margin"> <input class="book-bord" type="submit" value="BOOK"> </div>
     
     </section>
 <!-- diner sektion ´ -->
-    <section class="diner">
+    <section id="diner" class="diner">
         <br>
         <h2>SHARKS DINER</h2>
         <br>
@@ -196,7 +197,7 @@
             
             Uanset om du ønsker at nyde en afslappet frokost eller dele en lækker aftenmåltid med venner og familie, inviterer Sharks i Århus dig til at tage plads ved bordet og opleve en smagsoplevelse, der går ud over det sædvanlige. Velkommen til en verden af velsmagende traditioner og uforglemmelige bider hos Sharks i Århus.</p>
             <!-- booking til diner -->
-        <div class="month">  
+        <div id="book-bord" class="month">  
             <h2>KALENDER</h2> 
             <br>
             <ul>
@@ -229,7 +230,7 @@
             <li>7</li>
             <li>8</li>
             <li>9</li>
-            <li><span class="active">10</span></li>
+            <li>10</li>
             <li>11</li>
             <li>12</li>
             <li>13</li>
@@ -253,19 +254,20 @@
             <li>31</li>
           </ul>
           <br>
-          <input class="book-bord" type="submit" value="BOOK BORD">
+          <div class="book-bord-button"><input class="book-bord" type="submit" value="BOOK BORD"></div>
           
     </section>
     <section class="diner-menu">
 
     </section>
 
-    <section class="drinks-kort">
+    <section id="drinks" class="drinks-kort">
 
-    </section>
+    </section >
     <!-- Om os sektion -->
+    <section class="since-1993background">
     <br>
-    <h2 class="since">S I N C E</h2>
+    <h2 id="since-1993" class="since">S I N C E</h2>
     <h2 class="year-1993">1 9 9 3</h2>
     <br>
     <section class="since-1993">
@@ -273,34 +275,34 @@
       <div class="poolstang"><img src="media/poolstang1993.webp" alt="poolkø med 8 balls"></div>
       <div class="since-tekst since-tekst1">Sharks Poolhall åbnede dørene den 10. november 1993, grundlagt af Brd. Morten & Jesper Laugesen samt den nu afdøde aarhusianske pizzakonge Michael Lee.</div>
       <div class="since-tekst since-tekst2">Efter succesen åbnede de allerede året efter en filial i Odense, som de ejede indtil 2009.</div>
-      <div class="since-tekst  since-tekst3">Med 26 poolborde har Sharks etableret sig som Danmarks største poolhall</div>
+      <div class="since-tekst since-tekst3">Med 26 poolborde har Sharks etableret sig som Danmarks største poolhall.</div>
       <div class="since-tekst since-tekst4">I 2008 udvidede de oplevelsen ved at introducere Sharks Diner, der serverer verdensklasse-burgere i ægte amerikanerstil.</div>
       <div class="since-tekst since-tekst5">Sommeren 2015 markerede åbningen af Sports Lounge, hvor gæster kan se en bred vifte af sportsbegivenheder på en imponerende storskærm (3,5×2 meter).</div>
-      <div class="since-tekst since-tekst6"> Loungen byder på hyggelige omgivelser, hvor man kan slappe af og nyde en øl eller en burger fra den populære diner.</div>
+      <div class="since-tekst since-tekst6">Loungen byder på hyggelige omgivelser, hvor man kan slappe af og nyde en øl eller en burger fra den populære diner.</div>
       <div class="since-tekst since-tekst7">Sports Lounge tilbyder en bred vifte af sportsbegivenheder, fra den engelske Premier League til NFL, håndboldmesterskaber og Tour de France.</div>
       <div class="since-tekst since-tekst8">Sharks Poolhall har udviklet sig til et populært sted for alle aldersgrupper og fortsætter med at tilføje nye dimensioner til oplevelsen, der strækker sig ud over poolspil.</div>
-
+    </section>
     </section>
 <!--kontakt formular sektion-->
     <section class="kontakt">
         <form>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 16px;">
-                <div style="width: 48%;">
+            <div class="kontaktlabel">
+                <div class="kontaktstørrelse kontaktstørrelse-top">
                     <label for="name"></label>
                     <input type="text" id="name" name="name" placeholder="Dit Navn" required>
                 </div>
-                <div style="width: 48%;">
+                <div class="kontaktstørrelse kontaktstørrelse-top">
                     <label for="phone"></label>
                     <input type="tel" id="phone" name="phone" placeholder="Dit Telefonnummer" required>
                 </div>
             </div>
         
-            <div style="display: flex; justify-content: space-between; margin-bottom: 16px;">
-                <div style="width: 48%;">
+            <div class="kontaktlabel">
+                <div class="kontaktstørrelse">
                     <label for="email"></label>
                     <input type="email" id="email" name="email" placeholder="Din Email" required>
                 </div>
-                <div style="width: 48%;">
+                <div class="kontaktstørrelse">
                     <label for="firm"></label>
                     <input type="text" id="firm" name="firm" placeholder="Dit Firma (valgfrit)">
                 </div>
@@ -311,7 +313,7 @@
                 <textarea id="message" name="message" rows="4" placeholder="Din Besked" required></textarea>
             </div>
         
-            <input type="submit" value="Send" class="kontakt-button">
+            <div class="book-bord-button"><input type="submit" value="Send" class="kontakt-button "></div>
         </form>
 
     </section>
@@ -329,16 +331,12 @@
                 
             </div>
     
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Term</a></li>
-            
-        </ul>
-        <p class="copyright">Terms of use * Privacy Policy</p>
-        <p>Tlf: 86 18 09 90</p>
+      
+        <p class="copyright">Terms of use | Privacy Policy</p>
+        <p>Tlf: 86 18 09 90 | mail@sharks.dk</p>
     
     </footer>
+    <!-- back to top -->
+    <button id="myBtn"><a href="#top"><i class="fa-solid fa-arrow-up"></i></a></button>
 </body>
 </html>
