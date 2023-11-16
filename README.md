@@ -81,3 +81,52 @@ Gammel poolstang kode
     grid-area: 8 / 3 / 9 / 4;
 
   } */
+
+
+
+
+
+
+
+
+Lave booking system aktiviteter i html/css hvis tiden er der
+
+
+
+aktivittets liste lidt mere margin mobile/tablet (done)
+
+aktivitets tekst mobile/desktop lidt mere plads i bunden. (done)
+
+book aktivitet margin top tablet. (done)
+
+book aktivitet knap margin bottom (done)
+
+sharks diner h2 margin top tablet/desktop (done)
+
+sharks diner tekst en halv tissemand mere (margin bottom) (done)
+
+tekster skal være aarhus i århus - tjek
+
+since 1993 bottom mindre margin til kontakt form tablet (done)
+
+since 1993 tablet lidt mere margin top. (done)
+
+kontakt lidt mere plads toppen, så det matcher top og bund - tjek
+
+knappen send skal også have lige så meget margin top som top og bunden - tjek
+
+footer lidt mere plads mellem terms of use og tlf nr - tjek
+
+pool turnering lidt mere plads top og bund. - kom tilbage hertil
+
+intro tekst lidt margin bottom - tjek
+
+events top margin - tjek
+
+book aktivitet p tag desktop skal være breddere/samme størrelse som img - tjek
+
+til toppen knap skal være i højre hjørne - tjek
+
+
+
+
